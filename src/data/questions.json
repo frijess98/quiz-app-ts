@@ -1,135 +1,343 @@
 [
   {
-    "question": "Was ist die Hauptstadt der Schweiz?",
-    "correct_answer": "Bern",
-    "incorrect_answers": ["Zürich", "Genf", "Basel"],
-    "difficulty": "easy",
-    "category": "Geografie"
-  },
-  {
-    "question": "Wie viele Kantone hat die Schweiz?",
-    "correct_answer": "26",
-    "incorrect_answers": ["24", "28", "30"],
-    "difficulty": "easy",
-    "category": "Geografie"
-  },
-  {
-    "question": "Was bedeutet HTML?",
-    "correct_answer": "HyperText Markup Language",
+    "question": "Was ist das primäre Ziel des Softwaretestens laut ISTQB?",
+    "correct_answer": "Risiken beim Einsatz der Software verringern und Qualität einschätzen",
     "incorrect_answers": [
-      "HyperText Machine Language",
-      "HighText Markup Language",
-      "HyperTool Markup Language"
+      "Software vollständig fehlerfrei machen",
+      "Den Entwicklungsprozess verlangsamen",
+      "Fehler im Betrieb beheben"
     ],
     "difficulty": "easy",
-    "category": "Informatik"
+    "category": "Grundlagen"
   },
   {
-    "question": "Welche Programmiersprache wird am häufigsten für Webentwicklung verwendet?",
-    "correct_answer": "JavaScript",
-    "incorrect_answers": ["Python", "Java", "C++"],
-    "difficulty": "easy",
-    "category": "Informatik"
-  },
-  {
-    "question": "Was ist ein Unit Test?",
-    "correct_answer": "Ein Test der einzelne Funktionen isoliert testet",
+    "question": "Was versteht man unter dem Begriff 'Testbasis'?",
+    "correct_answer": "Die Anforderungen und Informationen, gegen die getestet wird",
     "incorrect_answers": [
-      "Ein Test der die ganze App testet",
-      "Ein Test der die Datenbank testet",
-      "Ein Test der die UI testet"
-    ],
-    "difficulty": "medium",
-    "category": "Informatik"
-  },
-  {
-    "question": "In welchem Jahr wurde die Schweiz gegründet?",
-    "correct_answer": "1291",
-    "incorrect_answers": ["1315", "1648", "1848"],
-    "difficulty": "medium",
-    "category": "Geschichte"
-  },
-  {
-    "question": "Was ist der höchste Berg der Schweiz?",
-    "correct_answer": "Dufourspitze",
-    "incorrect_answers": ["Matterhorn", "Jungfrau", "Eiger"],
-    "difficulty": "medium",
-    "category": "Geografie"
-  },
-  {
-    "question": "Was ist TypeScript?",
-    "correct_answer": "JavaScript mit statischen Typen",
-    "incorrect_answers": [
-      "Eine neue Programmiersprache",
-      "Ein JavaScript Framework",
-      "Ein CSS Präprozessor"
-    ],
-    "difficulty": "medium",
-    "category": "Informatik"
-  },
-  {
-    "question": "Was macht der Begriff 'Refactoring'?",
-    "correct_answer": "Code umstrukturieren ohne das Verhalten zu ändern",
-    "incorrect_answers": [
-      "Neue Features hinzufügen",
-      "Bugs beheben",
-      "Tests schreiben"
-    ],
-    "difficulty": "medium",
-    "category": "Informatik"
-  },
-  {
-    "question": "Welches ist das grösste Land der Welt nach Fläche?",
-    "correct_answer": "Russland",
-    "incorrect_answers": ["Kanada", "USA", "China"],
-    "difficulty": "easy",
-    "category": "Geografie"
-  },
-  {
-    "question": "Was ist eine API?",
-    "correct_answer": "Eine Schnittstelle zwischen zwei Systemen",
-    "incorrect_answers": [
-      "Eine Datenbank",
-      "Ein Betriebssystem",
-      "Ein Framework"
+      "Das verwendete Testframework",
+      "Die Anzahl der Testfälle",
+      "Die Testumgebung"
     ],
     "difficulty": "easy",
-    "category": "Informatik"
+    "category": "Grundlagen"
   },
   {
-    "question": "Was ist Git?",
-    "correct_answer": "Ein Versionskontrollsystem",
-    "incorrect_answers": ["Eine Datenbank", "Ein Texteditor", "Ein Framework"],
-    "difficulty": "easy",
-    "category": "Informatik"
-  },
-  {
-    "question": "Welches Designprinzip steht hinter TDD?",
-    "correct_answer": "Tests vor dem Code schreiben",
+    "question": "Was ist ein Fehler im Sinne des Softwaretestens?",
+    "correct_answer": "Eine Abweichung zwischen Ist- und Sollverhalten",
     "incorrect_answers": [
-      "Tests nach dem Code schreiben",
-      "Keine Tests schreiben",
-      "Nur manuelle Tests"
+      "Ein Absturz der Anwendung",
+      "Eine fehlende Funktion",
+      "Ein schlechter Code-Stil"
+    ],
+    "difficulty": "easy",
+    "category": "Grundlagen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen statischem und dynamischem Testen?",
+    "correct_answer": "Beim statischen Test wird das Testobjekt nicht ausgeführt",
+    "incorrect_answers": [
+      "Statische Tests sind immer automatisiert",
+      "Dynamische Tests sind immer schneller",
+      "Es gibt keinen wesentlichen Unterschied"
+    ],
+    "difficulty": "easy",
+    "category": "Grundlagen"
+  },
+  {
+    "question": "Welche der folgenden Aussagen beschreibt einen Komponententest?",
+    "correct_answer": "Einzelne Softwarebausteine werden isoliert getestet",
+    "incorrect_answers": [
+      "Das gesamte System wird getestet",
+      "Mehrere Komponenten werden gemeinsam getestet",
+      "Die Benutzeroberfläche wird getestet"
+    ],
+    "difficulty": "easy",
+    "category": "Teststufen"
+  },
+  {
+    "question": "Was ist ein Testtreiber?",
+    "correct_answer": "Ein Programm das Schnittstellenaufrufe absetzt und Reaktionen des Testobjekts entgegennimmt",
+    "incorrect_answers": [
+      "Ein Werkzeug zur Testergebnisauswertung",
+      "Eine Person die Tests durchführt",
+      "Ein automatisches Deployment-Tool"
+    ],
+    "difficulty": "easy",
+    "category": "Komponententest"
+  },
+  {
+    "question": "Was bedeutet 'Shift-Left' beim Testen?",
+    "correct_answer": "Testen möglichst früh im Entwicklungsprozess beginnen",
+    "incorrect_answers": [
+      "Tests von rechts nach links ausführen",
+      "Testen erst nach dem Release",
+      "Nur manuelle Tests durchführen"
+    ],
+    "difficulty": "easy",
+    "category": "Grundlagen"
+  },
+  {
+    "question": "Was sind die fünf Teststufen laut ISTQB Foundation Level?",
+    "correct_answer": "Komponenten-, Komponentenintegrations-, System-, Systemintegrations- und Abnahmetest",
+    "incorrect_answers": [
+      "Unit-, Integrations-, Regressions-, Performance- und Abnahmetest",
+      "Funktions-, Last-, Stress-, Sicherheits- und Abnahmetest",
+      "Blackbox-, Whitebox-, Greybox-, Exploratory- und Abnahmetest"
+    ],
+    "difficulty": "easy",
+    "category": "Teststufen"
+  },
+  {
+    "question": "Was ist der Zweck von Reviews im statischen Test?",
+    "correct_answer": "Fehler in Dokumenten frühzeitig erkennen bevor sie sich fortpflanzen",
+    "incorrect_answers": [
+      "Die Testabdeckung zu messen",
+      "Automatische Tests zu generieren",
+      "Die Performance zu testen"
+    ],
+    "difficulty": "easy",
+    "category": "Statischer Test"
+  },
+  {
+    "question": "Kann Testen beweisen, dass eine Software vollständig fehlerfrei ist?",
+    "correct_answer": "Nein, Fehlerfreiheit kann durch Testen nicht nachgewiesen werden",
+    "incorrect_answers": [
+      "Ja, wenn alle Testfälle grün sind",
+      "Ja, bei 100% Testabdeckung",
+      "Ja, bei vollständiger Automatisierung"
+    ],
+    "difficulty": "easy",
+    "category": "Grundlagen"
+  },
+  {
+    "question": "Was ist eine Äquivalenzklasse beim Blackbox-Testen?",
+    "correct_answer": "Eine Menge von Eingabewerten, bei denen das Testobjekt gleich reagieren soll",
+    "incorrect_answers": [
+      "Eine Gruppe von Testfällen mit gleicher Priorität",
+      "Eine Klasse im objektorientierten Sinne",
+      "Eine Gruppe von Testern mit gleichem Kenntnisstand"
+    ],
+    "difficulty": "medium",
+    "category": "Testverfahren"
+  },
+  {
+    "question": "Warum sollen Repräsentanten ungültiger Äquivalenzklassen nicht miteinander kombiniert werden?",
+    "correct_answer": "Um gegenseitige Fehlermaskierung zu vermeiden",
+    "incorrect_answers": [
+      "Weil das zu viele Testfälle erzeugt",
+      "Weil ungültige Werte nie kombiniert vorkommen",
+      "Weil das Testwerkzeuge nicht unterstützen"
+    ],
+    "difficulty": "medium",
+    "category": "Testverfahren"
+  },
+  {
+    "question": "Was sind INVEST-Kriterien im agilen Testen?",
+    "correct_answer": "Kriterien zur Beurteilung der Qualität einer User Story",
+    "incorrect_answers": [
+      "Kriterien zur Bewertung von Testergebnissen",
+      "Kriterien zur Auswahl von Testwerkzeugen",
+      "Kriterien zur Messung der Testabdeckung"
+    ],
+    "difficulty": "medium",
+    "category": "Agiles Testen"
+  },
+  {
+    "question": "Was versteht man unter 'Tailoring' im Testprozess?",
+    "correct_answer": "Ein Vorgehensmodell auf projektspezifische Gegebenheiten anpassen",
+    "incorrect_answers": [
+      "Testfälle nach Priorität sortieren",
+      "Testautomatisierung einführen",
+      "Testberichte erstellen"
+    ],
+    "difficulty": "medium",
+    "category": "Testmanagement"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Verifikation und Validierung?",
+    "correct_answer": "Verifikation prüft ob Anforderungen erfüllt sind, Validierung ob das System den Nutzerbedarf erfüllt",
+    "incorrect_answers": [
+      "Verifikation ist manuell, Validierung automatisiert",
+      "Kein wesentlicher Unterschied",
+      "Validierung prüft Anforderungen, Verifikation den Nutzerbedarf"
+    ],
+    "difficulty": "medium",
+    "category": "Grundlagen"
+  },
+  {
+    "question": "Was ist das Ziel der Grenzwertanalyse?",
+    "correct_answer": "Fehler an den Grenzen von Äquivalenzklassen aufdecken",
+    "incorrect_answers": [
+      "Die maximale Systemlast testen",
+      "Alle Testfälle zu minimieren",
+      "Zufällige Eingaben zu testen"
+    ],
+    "difficulty": "medium",
+    "category": "Testverfahren"
+  },
+  {
+    "question": "Was ist ATDD – Abnahmetestgetriebene Entwicklung?",
+    "correct_answer": "Abnahmetestfälle werden vor der Implementierung erstellt",
+    "incorrect_answers": [
+      "Tests werden nach der Abnahme geschrieben",
+      "Nur Entwickler schreiben die Tests",
+      "Abnahmetests ersetzen Unit Tests"
+    ],
+    "difficulty": "medium",
+    "category": "Agiles Testen"
+  },
+  {
+    "question": "Welche Aussage zum Komponentenintegrationstest ist korrekt?",
+    "correct_answer": "Er prüft die Wechselwirkung zwischen mehreren Komponenten",
+    "incorrect_answers": [
+      "Er testet einzelne Komponenten isoliert",
+      "Er testet das gesamte System mit echten Nutzern",
+      "Er prüft nur die Benutzeroberfläche"
+    ],
+    "difficulty": "medium",
+    "category": "Teststufen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einem Fehler (Defect) und einer Fehlerwirkung (Failure)?",
+    "correct_answer": "Ein Defect ist im Code, eine Failure ist die beobachtbare Auswirkung beim Ausführen",
+    "incorrect_answers": [
+      "Kein Unterschied, beide Begriffe bedeuten dasselbe",
+      "Eine Failure tritt nur in Produktion auf",
+      "Ein Defect ist immer schwerwiegender als eine Failure"
+    ],
+    "difficulty": "medium",
+    "category": "Grundlagen"
+  },
+  {
+    "question": "Wofür steht das 'V' im V-Modell?",
+    "correct_answer": "Jeder Entwicklungsphase ist eine zugehörige Testphase gegenübergestellt",
+    "incorrect_answers": [
+      "Für Verifikation als einzige Testmethode",
+      "Für den Verlauf der Kosten im Projekt",
+      "Für die Versionskontrolle im Entwicklungsprozess"
+    ],
+    "difficulty": "medium",
+    "category": "Testprozess"
+  },
+  {
+    "question": "Was versteht man unter Fehlermaskierung beim Testen?",
+    "correct_answer": "Ein Fehler verhindert dass ein anderer Fehler sichtbar wird",
+    "incorrect_answers": [
+      "Ein Tester ignoriert absichtlich Fehler",
+      "Fehler werden im Bericht verschwiegen",
+      "Ein Fehler wird durch Logging verdeckt"
     ],
     "difficulty": "hard",
-    "category": "Informatik"
+    "category": "Testverfahren"
   },
   {
-    "question": "Was ist der Unterschied zwischen '==' und '===' in JavaScript?",
-    "correct_answer": "'===' prüft auch den Typ",
+    "question": "Was ist der Unterschied zwischen Anweisungsüberdeckung und Zweigüberdeckung?",
+    "correct_answer": "Zweigüberdeckung verlangt dass jeder Programmzweig mindestens einmal durchlaufen wird, nicht nur jede Anweisung",
     "incorrect_answers": [
-      "Kein Unterschied",
-      "'==' prüft auch den Typ",
-      "'===' ist langsamer"
+      "Anweisungsüberdeckung ist stärker als Zweigüberdeckung",
+      "Zweigüberdeckung gilt nur für Schleifen",
+      "Kein Unterschied, beide messen dasselbe"
     ],
     "difficulty": "hard",
-    "category": "Informatik"
+    "category": "Whitebox-Test"
   },
   {
-    "question": "Welches Tier ist auf dem Schweizer Wappen?",
-    "correct_answer": "Kein Tier – nur ein Kreuz",
-    "incorrect_answers": ["Bär", "Adler", "Löwe"],
+    "question": "Welche Aussage zur Testpyramide ist korrekt?",
+    "correct_answer": "Unit Tests bilden die Basis, System- und Abnahmetests die Spitze – je höher desto weniger Tests",
+    "incorrect_answers": [
+      "Abnahmetests bilden die Basis weil sie am wichtigsten sind",
+      "Alle Teststufen sollen gleich viele Tests enthalten",
+      "Die Pyramide beschreibt nur die Testkosten, nicht die Testanzahl"
+    ],
     "difficulty": "hard",
-    "category": "Allgemeinwissen"
+    "category": "Testmanagement"
+  },
+  {
+    "question": "Was ist risikobasiertes Testen?",
+    "correct_answer": "Testfälle werden nach Eintrittswahrscheinlichkeit und Auswirkung von Risiken priorisiert",
+    "incorrect_answers": [
+      "Testen ohne Testplan um Risiken zu minimieren",
+      "Nur sicherheitskritische Funktionen werden getestet",
+      "Risiken werden nach dem Test bewertet"
+    ],
+    "difficulty": "hard",
+    "category": "Testmanagement"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Blackbox- und Whitebox-Testverfahren?",
+    "correct_answer": "Beim Blackbox-Test ist die innere Struktur des Testobjekts unbekannt, beim Whitebox-Test wird der Sourcecode analysiert",
+    "incorrect_answers": [
+      "Blackbox-Tests sind immer automatisiert",
+      "Whitebox-Tests werden nur von Entwicklern durchgeführt",
+      "Blackbox-Tests sind immer aufwändiger"
+    ],
+    "difficulty": "hard",
+    "category": "Testverfahren"
+  },
+  {
+    "question": "Was beschreibt der Begriff 'erfahrungsbasiertes Testen'?",
+    "correct_answer": "Tests basieren auf dem Wissen und der Intuition des Testers, ergänzend zu systematischen Verfahren",
+    "incorrect_answers": [
+      "Nur erfahrene Tester dürfen Tests durchführen",
+      "Tests werden aus alten Testprotokollen abgeleitet",
+      "Erfahrungsbasierte Tests sind immer Regressionstests"
+    ],
+    "difficulty": "hard",
+    "category": "Testverfahren"
+  },
+  {
+    "question": "Was ist der Zweck von Testquadranten im agilen Testen?",
+    "correct_answer": "Sie helfen Testaktivitäten nach Zweck und Zielgruppe zu klassifizieren und zu balancieren",
+    "incorrect_answers": [
+      "Sie beschreiben vier Testautomatisierungswerkzeuge",
+      "Sie definieren vier Rollen im Testteam",
+      "Sie legen die Reihenfolge der Testausführung fest"
+    ],
+    "difficulty": "hard",
+    "category": "Agiles Testen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Testplanung und Teststeuerung?",
+    "correct_answer": "Testplanung legt Ziele und Vorgehen fest, Teststeuerung überwacht und passt den laufenden Testprozess an",
+    "incorrect_answers": [
+      "Kein Unterschied, beide sind identisch",
+      "Teststeuerung findet vor der Testplanung statt",
+      "Testplanung ist nur für agile Projekte relevant"
+    ],
+    "difficulty": "hard",
+    "category": "Testmanagement"
+  },
+  {
+    "question": "Warum ist Testautomatisierung in agilen Projekten besonders wichtig?",
+    "correct_answer": "Weil kurze Iterationen ohne Automatisierung nicht mit ausreichender Testabdeckung abgeschlossen werden können",
+    "incorrect_answers": [
+      "Weil manuelle Tests in agilen Projekten verboten sind",
+      "Weil Automatisierung immer günstiger ist als manuelles Testen",
+      "Weil agile Teams keine Tester haben"
+    ],
+    "difficulty": "hard",
+    "category": "Agiles Testen"
+  },
+  {
+    "question": "Was versteht man unter 'explorativem Testen'?",
+    "correct_answer": "Testdesign und Testdurchführung finden gleichzeitig statt, geleitet durch die Ergebnisse des aktuellen Tests",
+    "incorrect_answers": [
+      "Tests werden automatisch durch KI generiert",
+      "Das System wird ohne Anforderungen entwickelt und getestet",
+      "Explorative Tests sind immer Lasttests"
+    ],
+    "difficulty": "hard",
+    "category": "Testverfahren"
+  },
+  {
+    "question": "Was ist der 7. Grundsatz des Testens laut ISTQB – 'Trugschluss: Keine Fehler bedeutet ein brauchbares System'?",
+    "correct_answer": "Ein fehlerfreies System kann trotzdem unbrauchbar sein wenn es nicht den Nutzerbedürfnissen entspricht",
+    "incorrect_answers": [
+      "Wenn keine Fehler gefunden wurden muss nicht weiter getestet werden",
+      "Fehlerfreiheit ist das wichtigste Qualitätsmerkmal",
+      "Ein System ohne Fehler ist immer auslieferbar"
+    ],
+    "difficulty": "hard",
+    "category": "Grundlagen"
   }
 ]
