@@ -2,13 +2,13 @@ import { describe, test, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Question } from "../components/Question";
-import { Question as QuestionType } from "../types/quiz";
+import { QuizQuestion, Difficulty } from "../types/quiz";
 
-const mockQuestion: QuestionType = {
+const mockQuestion: QuizQuestion = {
   question: "Was ist 2+2?",
   answers: ["3", "4", "5", "6"],
   correctIndex: 1,
-  difficulty: "easy",
+  difficulty: "easy" as Difficulty,
   category: "Math",
 };
 

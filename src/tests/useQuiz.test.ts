@@ -1,14 +1,14 @@
 import { describe, test, expect } from "vitest";
 import { renderHook, act } from "@testing-library/react";
 import { useQuiz } from "../hooks/useQuiz";
-import { Question } from "../types/quiz";
+import { QuizQuestion, Difficulty } from "../types/quiz";
 
-const mockQuestions: Question[] = [
+const mockQuestions: QuizQuestion[] = [
   {
     question: "Was ist 2+2?",
     answers: ["3", "4", "5", "6"],
     correctIndex: 1,
-    difficulty: "easy",
+    difficulty: "easy" as Difficulty,
     category: "Math",
   },
   {

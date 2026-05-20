@@ -1,13 +1,14 @@
-import { ApiQuestion, Difficulty, Question } from "../types/quiz";
+import { ApiQuestion, Difficulty, QuizQuestion } from "../types/quiz";
+import localQuestions from "../data/questions.json";
 
-export function transformQuestion(apiQuestion: ApiQuestion): Question {
+export function transformQuestion(apiQuestion: ApiQuestion): QuizQuestion {
   const answers = [
     ...apiQuestion.incorrect_answers,
     apiQuestion.correct_answer,
   ].sort(() => Math.random() - 0.5);
 
   return {
-    question: decodeURIComponent(apiQuestion.question),
+    question: apiQuestion.question,
     answers,
     correctIndex: answers.indexOf(apiQuestion.correct_answer),
     difficulty: apiQuestion.difficulty,
@@ -18,12 +19,11 @@ export function transformQuestion(apiQuestion: ApiQuestion): Question {
 export async function fetchQuestions(
   amount: number = 10,
   difficulty: Difficulty = "medium",
-): Promise<Question[]> {
-  const res = await fetch(
-    `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple`,
-  );
-  if (!res.ok) throw new Error(`API Error: ${res.status}`);
-  const data = await res.json();
-  if (data.response_code !== 0) throw new Error("No questions available");
-  return data.results.map(transformQuestion);
+): Promise<QuizQuestion[]> {
+  const filtered = (localQuestions as ApiQuestion[])
+    .filter((q) => q.difficulty === difficulty)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, amount);
+
+  return filtered.map(transformQuestion);
 }

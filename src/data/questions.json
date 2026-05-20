@@ -1,0 +1,135 @@
+[
+  {
+    "question": "Was ist die Hauptstadt der Schweiz?",
+    "correct_answer": "Bern",
+    "incorrect_answers": ["Zürich", "Genf", "Basel"],
+    "difficulty": "easy",
+    "category": "Geografie"
+  },
+  {
+    "question": "Wie viele Kantone hat die Schweiz?",
+    "correct_answer": "26",
+    "incorrect_answers": ["24", "28", "30"],
+    "difficulty": "easy",
+    "category": "Geografie"
+  },
+  {
+    "question": "Was bedeutet HTML?",
+    "correct_answer": "HyperText Markup Language",
+    "incorrect_answers": [
+      "HyperText Machine Language",
+      "HighText Markup Language",
+      "HyperTool Markup Language"
+    ],
+    "difficulty": "easy",
+    "category": "Informatik"
+  },
+  {
+    "question": "Welche Programmiersprache wird am häufigsten für Webentwicklung verwendet?",
+    "correct_answer": "JavaScript",
+    "incorrect_answers": ["Python", "Java", "C++"],
+    "difficulty": "easy",
+    "category": "Informatik"
+  },
+  {
+    "question": "Was ist ein Unit Test?",
+    "correct_answer": "Ein Test der einzelne Funktionen isoliert testet",
+    "incorrect_answers": [
+      "Ein Test der die ganze App testet",
+      "Ein Test der die Datenbank testet",
+      "Ein Test der die UI testet"
+    ],
+    "difficulty": "medium",
+    "category": "Informatik"
+  },
+  {
+    "question": "In welchem Jahr wurde die Schweiz gegründet?",
+    "correct_answer": "1291",
+    "incorrect_answers": ["1315", "1648", "1848"],
+    "difficulty": "medium",
+    "category": "Geschichte"
+  },
+  {
+    "question": "Was ist der höchste Berg der Schweiz?",
+    "correct_answer": "Dufourspitze",
+    "incorrect_answers": ["Matterhorn", "Jungfrau", "Eiger"],
+    "difficulty": "medium",
+    "category": "Geografie"
+  },
+  {
+    "question": "Was ist TypeScript?",
+    "correct_answer": "JavaScript mit statischen Typen",
+    "incorrect_answers": [
+      "Eine neue Programmiersprache",
+      "Ein JavaScript Framework",
+      "Ein CSS Präprozessor"
+    ],
+    "difficulty": "medium",
+    "category": "Informatik"
+  },
+  {
+    "question": "Was macht der Begriff 'Refactoring'?",
+    "correct_answer": "Code umstrukturieren ohne das Verhalten zu ändern",
+    "incorrect_answers": [
+      "Neue Features hinzufügen",
+      "Bugs beheben",
+      "Tests schreiben"
+    ],
+    "difficulty": "medium",
+    "category": "Informatik"
+  },
+  {
+    "question": "Welches ist das grösste Land der Welt nach Fläche?",
+    "correct_answer": "Russland",
+    "incorrect_answers": ["Kanada", "USA", "China"],
+    "difficulty": "easy",
+    "category": "Geografie"
+  },
+  {
+    "question": "Was ist eine API?",
+    "correct_answer": "Eine Schnittstelle zwischen zwei Systemen",
+    "incorrect_answers": [
+      "Eine Datenbank",
+      "Ein Betriebssystem",
+      "Ein Framework"
+    ],
+    "difficulty": "easy",
+    "category": "Informatik"
+  },
+  {
+    "question": "Was ist Git?",
+    "correct_answer": "Ein Versionskontrollsystem",
+    "incorrect_answers": ["Eine Datenbank", "Ein Texteditor", "Ein Framework"],
+    "difficulty": "easy",
+    "category": "Informatik"
+  },
+  {
+    "question": "Welches Designprinzip steht hinter TDD?",
+    "correct_answer": "Tests vor dem Code schreiben",
+    "incorrect_answers": [
+      "Tests nach dem Code schreiben",
+      "Keine Tests schreiben",
+      "Nur manuelle Tests"
+    ],
+    "difficulty": "hard",
+    "category": "Informatik"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen '==' und '===' in JavaScript?",
+    "correct_answer": "'===' prüft auch den Typ",
+    "incorrect_answers": [
+      "Kein Unterschied",
+      "'==' prüft auch den Typ",
+      "'===' ist langsamer"
+    ],
+    "difficulty": "hard",
+    "category": "Informatik"
+  },
+  {
+    "question": "Welches Tier ist auf dem Schweizer Wappen?",
+    "correct_answer": "Kein Tier – nur ein Kreuz",
+    "incorrect_answers": ["Bär", "Adler", "Löwe"],
+    "difficulty": "hard",
+    "category": "Allgemeinwissen"
+  }
+]

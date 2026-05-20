@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Question, QuizState } from "../types/quiz";
+import { QuizQuestion, QuizState } from "../types/quiz";
 
 export function useQuiz() {
   const [state, setState] = useState<QuizState>({
@@ -24,7 +24,7 @@ export function useQuiz() {
     }));
   }
 
-  function start(questions: Question[]) {
+  function start(questions: QuizQuestion[]) {
     setState({
       questions,
       currentIndex: 0,

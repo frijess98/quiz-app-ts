@@ -1,20 +1,25 @@
-import { Question as QuestionType } from "../types/quiz";
+import { QuizQuestion } from "../types/quiz";
 
 interface Props {
-  question: QuestionType;
+  question: QuizQuestion;
   onAnswer: (index: number) => void;
   questionNumber: number;
   total: number;
 }
 
 export function Question({ question, onAnswer, questionNumber, total }: Props) {
+  const progress = (questionNumber / total) * 100;
+
   return (
     <div>
-      <p>
-        {questionNumber} / {total}
+      <p className="progress">
+        Frage {questionNumber} von {total}
       </p>
+      <div className="progress-bar">
+        <div className="progress-bar-fill" style={{ width: `${progress}%` }} />
+      </div>
       <h2 dangerouslySetInnerHTML={{ __html: question.question }} />
-      <ul>
+      <ul style={{ listStyle: "none", padding: 0 }}>
         {question.answers.map((answer, index) => (
           <button key={index} onClick={() => onAnswer(index)}>
             {answer}

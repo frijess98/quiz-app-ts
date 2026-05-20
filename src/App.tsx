@@ -1,122 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import { useQuiz } from "./hooks/useQuiz";
+import { Question } from "./components/Question";
+import { Result } from "./components/Result";
+import { fetchQuestions } from "./api/quizApi";
+import { Difficulty } from "./types/quiz";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const { state, start, answer, reset } = useQuiz();
+  const [difficulty, setDifficulty] = useState<Difficulty>("medium");
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleStart() {
+    setError(null);
+    try {
+      const questions = await fetchQuestions(10, difficulty);
+      start(questions);
+    } catch (e) {
+      setError("Fragen konnten nicht geladen werden. Versuche es nochmal!");
+    }
+  }
+
+  if (state.status === "idle" || state.status === "error") {
+    return (
+      <div className="container">
+        <h1>Quiz App</h1>
+        <p>Teste dein Wissen!</p>
+        <div className="difficulty">
+          <label>Schwierigkeit:</label>
+          <select
+            value={difficulty}
+            onChange={(e) => setDifficulty(e.target.value as Difficulty)}
+          >
+            <option value="easy">Einfach</option>
+            <option value="medium">Mittel</option>
+            <option value="hard">Schwer</option>
+          </select>
+        </div>
+        {error && <p className="error">{error}</p>}
+        <button className="btn-primary" onClick={handleStart}>
+          Starten
+        </button>
+      </div>
+    );
+  }
+
+  if (state.status === "loading") {
+    return (
+      <div className="container">
+        <p>Fragen werden geladen...</p>
+      </div>
+    );
+  }
+
+  if (state.status === "finished") {
+    return (
+      <div className="container">
+        <Result
+          score={state.score}
+          total={state.questions.length}
+          onRestart={reset}
+        />
+      </div>
+    );
+  }
+
+  const current = state.questions[state.currentIndex];
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    <div className="container">
+      <Question
+        question={current}
+        onAnswer={answer}
+        questionNumber={state.currentIndex + 1}
+        total={state.questions.length}
+      />
+    </div>
+  );
 }
-
-export default App
