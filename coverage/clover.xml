@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1779304160415" clover="3.2.0">
+  <project timestamp="1779304160415" name="All files">
+    <metrics statements="22" coveredstatements="22" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12" elements="44" coveredelements="44" complexity="0" loc="22" ncloc="22" packages="5" files="6" classes="6"/>
+    <package name="api">
+      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <file name="quizApi.ts" path="C:\Users\jessi\quiz-app-ts\src\api\quizApi.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="7" count="29" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Question.tsx" path="C:\Users\jessi\quiz-app-ts\src\components\Question.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="19" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+      <file name="useQuiz.ts" path="C:\Users\jessi\quiz-app-ts\src\hooks\useQuiz.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="5" count="17" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="47" count="17" type="stmt"/>
+      </file>
+    </package>
+    <package name="mocks">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="handlers.ts" path="C:\Users\jessi\quiz-app-ts\src\mocks\handlers.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="server.ts" path="C:\Users\jessi\quiz-app-ts\src\mocks\server.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="quiz.ts" path="C:\Users\jessi\quiz-app-ts\src\types\quiz.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
